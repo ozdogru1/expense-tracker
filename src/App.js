@@ -5,8 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import { v4 as uuidv4 } from "uuid";
 
-// not: idye uuid koy
-const App = () => {
+ const App = () => {
   const [incomeList, setIncomeList] = useState(JSON.parse(localStorage.getItem("incomeList"))|| [] );
   const [expenseList, setExpenseList] = useState(JSON.parse(localStorage.getItem("expenseList"))|| []);
 
@@ -16,8 +15,7 @@ const App = () => {
       { type: eType, amount: eAmount, date: eDate, id: uuidv4() },
     ]);
   };
-  console.log(expenseList);
-
+ 
   const addIncomeListHandler = (iType, iAmount, iDate) => {
     setIncomeList([
       ...incomeList,

@@ -4,8 +4,7 @@ import Card from '../../UI/Card'
 import { BsFillTrashFill } from "react-icons/bs";
 
 const IncomeList = ({incomeList,incomeDeleteHandler}) => {
-  console.log(incomeList,"s");
-  return (
+   return (
     <div className='text-white'>
       {incomeList.map((income)=>(
         <Card key={income.id}>

@@ -35,8 +35,7 @@ const AddIncome = ({ addIncomeListHandler }) => {
     
   };
    
-  console.log(income);
-
+ 
   return (
     <div>
       <form onSubmit={addIncomeHandler}>
